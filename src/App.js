@@ -28,34 +28,13 @@ class App extends Component {
         <MuiThemeProvider>
           <div className={css(styles.chessList)}>
             <h1 className={css(styles.chesListTitle)}>Erp Chess</h1>
-            <AppBar
-              title="Title"
-              iconElementLeft={<span></span>}
-              iconElementRight={<FlatButton
-                backgroundColor="#a4c639"
-                hoverColor="#8AA62F"
-                label="New" />}
-            />
+
             <AutoComplete
               dataSource={this.state.dataSource}
               filter={AutoComplete.caseInsensitiveFilter}
             />
             <List>
-              <ListItem
-                primaryText="Brendan Lim"
-                nestedItems={[
-                  <ListItem
-                    key={1}
-                    primaryText="Starred"
-                    rightIconButton={<RaisedButton label="Edit" secondary={true} />}
-                  />,
-                  <ListItem
-                    key={2}
-                    primaryText="Another Starred"
-                    rightIconButton={<RaisedButton label="Edit" secondary={true} />}
-                  />,
-                ]}
-              />
+
               <ListItem
                 primaryText="Brendan Lim"
               />
